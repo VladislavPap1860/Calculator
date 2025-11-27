@@ -325,7 +325,7 @@ namespace Calculator
                     break;
 
                 case "/":
-                    if (TextBox_2.Text == "0")
+                    if (TextBox_2.Text == "0" || TextBox_2.Text == "0,")
                     {
                         MessageBox.Show("На ноль делить нельзя!", "Предупреждение", MessageBoxButton.OK, MessageBoxImage.Warning);
                         return;
