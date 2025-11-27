@@ -1,0 +1,44 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10,0,-10,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="TextBox" IsReadOnly="True" HorizontalAlignment="Left" Margin="275,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Height="37"/>
+        <TextBox x:Name="TextBox_1" IsReadOnly="True" HorizontalAlignment="Left" Margin="335,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Height="38"/>
+        <TextBox x:Name="TextBox_2" IsReadOnly="True" HorizontalAlignment="Left" Margin="395,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Height="36"/>
+        <TextBox x:Name="TextBox_3" IsReadOnly="True" HorizontalAlignment="Left" Margin="460,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Height="37"/>
+        <TextBlock HorizontalAlignment="Left" Margin="443,65,0,0" TextWrapping="Wrap" Text=" =" VerticalAlignment="Top" Width="22"/>
+
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="460,278,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.475,-1.69" Height="49" Width="106" Click="Button_Click_Clear"/>
+        <Button x:Name="Ввод" Content="Ввод" HorizontalAlignment="Left" Margin="460,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.475,-1.69" Height="49" Width="106" Click="Button_Click_enter"/>
+        <Button x:Name="Сложить" Content="+" HorizontalAlignment="Left" Margin="460,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48" Click="Button_Click_add"/>
+        <Button x:Name="Вычесть" Content="-" HorizontalAlignment="Left" Margin="520,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.475,-1.69" Height="47" Width="48" Click="Button_Click_subtract"/>
+        <Button x:Name="Умножить" Content="*" HorizontalAlignment="Left" Margin="519,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.475,-1.69" Height="47" Width="48" Click="Button_Click_multyply"/>
+        <Button x:Name="Разделить" Content="/" HorizontalAlignment="Left" Margin="460,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.475,-1.69" Height="47" Width="48" Click="Button_Click_devide"/>
+
+        <Button x:Name="_1" Content="1" HorizontalAlignment="Left" Margin="275,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="50" Width="48" Click="Button_Click_1"/>
+        <Button x:Name="_2" Content="2" HorizontalAlignment="Left" Margin="335,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48" Click="Button_Click_2"/>
+        <Button x:Name="_3" Content="3" HorizontalAlignment="Left" Margin="395,219,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48" Click="Button_Click_3"/>
+        <Button x:Name="_4" Content="4" HorizontalAlignment="Left" Margin="275,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48" Click="Button_Click_4"/>
+        <Button x:Name="_5" Content="5" HorizontalAlignment="Left" Margin="335,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48" Click="Button_Click_5"/>
+        <Button x:Name="_6" Content="6" HorizontalAlignment="Left" Margin="395,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48" Click="Button_Click_6"/>
+        <Button x:Name="_7" Content="7" HorizontalAlignment="Left" Margin="275,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48"  Click="Button_Click_7"/>
+        <Button x:Name="_8" Content="8" HorizontalAlignment="Left" Margin="335,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48"  Click="Button_Click_8"/>
+        <Button x:Name="_9" Content="9" HorizontalAlignment="Left" Margin="395,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48"  Click="Button_Click_9"/>
+        <Button x:Name="_0" Content="0" HorizontalAlignment="Left" Margin="335,278,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48" Click="Button_Click_0"/>
+        <Button x:Name="Смена_знака" Content="+/-" HorizontalAlignment="Left" Margin="275,278,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48" Click="Button_Click_change_symbol"/>
+        <Button x:Name="Comma" Content="," HorizontalAlignment="Left" Margin="395,278,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.357,-1.011" Height="49" Width="48" Click="Button_Click_comma"/>
+        
+
+
+    </Grid>
+</Window>
